@@ -1,8 +1,14 @@
+black==23.7.0
+email-validator==2.0.0.post2
 fastapi==0.103.0
+httpx==0.24.1
+passlib==1.7.4
 psycopg2-binary==2.9.7
 pydantic==2.3.0
+pydantic-settings==2.0.3
 pydantic_core==2.6.3
 PyJWT==2.8.0
+pytest==7.4.0
+python-dotenv==1.0.0
 SQLAlchemy==2.0.20
 uvicorn==0.23.2
-python-dotenv==1.0.0
