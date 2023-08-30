@@ -6,10 +6,18 @@ This is a RESTful API built with FastAPI for a system where users can post Ads a
 
 ## Features
 
-- User Authentication
-- CRUD operations for Ads and Comments
-- Pagination for Ads
-- Advanced Logging
+1. User Authentication using JWT
+2.CRUD operations for Ads and Comments
+3.RESTful API using FastAPI
+4.PostgreSQL as the database
+5.Use of ORM
+6.Tests for APIs
+7.OpenAPI Specification
+8.PyJWT for generating and decoding access and refresh tokens
+9.Logger for the application
+10.Exception handler for the application
+11.Pagination for Ads
+
 
 ## Technologies Used
 
@@ -31,7 +39,7 @@ This is a RESTful API built with FastAPI for a system where users can post Ads a
 1. Clone the repository:
 
     ```bash
-    git clone https://gitlab.com/your-username/my-ads-project.git
+    git clone https://github.com/MohamadAhmadi100/ads-application.git
     ```
 
 2. Navigate to the project directory:
@@ -59,6 +67,11 @@ This is a RESTful API built with FastAPI for a system where users can post Ads a
     ```bash
     uvicorn app.main:app --reload
     ```
+
+### Docker Setup
+
+1. Build the Docker image: `docker build -t ads-application .`
+2. Run the Docker container: `docker run -p 8000:8000 ads-application`
 
 ## Usage
 

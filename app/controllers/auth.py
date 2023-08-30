@@ -83,7 +83,7 @@ class AuthHandler:
             return payload if payload.get("scope") == "refresh" else False
 
     def check_current_user_tokens(
-        self, access: str = Header(...), refresh: str = Header(...)
+            self, access: str = Header(...), refresh: str = Header(...)
     ):
         access = access.replace(" ", "")
         refresh = refresh.replace(" ", "")
@@ -123,3 +123,6 @@ class AuthHandler:
                 status_code=401,
                 detail={"error": "Please login again", "redirect": "login"},
             )
+
+
+auth_handler = AuthHandler()
