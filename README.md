@@ -32,7 +32,6 @@ This is a RESTful API built with FastAPI for a system where users can post Ads a
 
 - Python 3.8+
 - PostgreSQL
-- Redis
 
 ### Steps
 
@@ -57,7 +56,7 @@ This is a RESTful API built with FastAPI for a system where users can post Ads a
 4. Set up the environment variables:
 
     ```bash
-    cp .env.example .env
+    cp .env .env
     ```
 
     Edit the `.env` file to include your database and Redis credentials.
@@ -65,7 +64,7 @@ This is a RESTful API built with FastAPI for a system where users can post Ads a
 5. Run the application:
 
     ```bash
-    uvicorn app.main:app --reload
+    python main.py
     ```
 
 ### Docker Setup
