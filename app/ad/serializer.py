@@ -26,4 +26,4 @@ class GetAds(BaseModel):
     comments: list[GetComments]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
